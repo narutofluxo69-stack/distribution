@@ -1,52 +1,1240 @@
 {
-    "version": "1.0.0",
-    "discord": {
-        "clientId": "385581240906022916",
-        "smallImageText": "NarutoFluxo",
-        "smallImageKey": "seal-circle"
-    },
-    "java": {
-        "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
-    },
-    "rss": "",
-    "servers": [
+  "version": "1.0.0",
+  "rss": "<LINK TO RSS FEED>",
+  "discord": {
+    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+  },
+  "servers": [
+    {
+      "id": "NarutoFluxo-1.7.10",
+      "name": "NarutoFluxo (Minecraft 1.7.10)",
+      "description": "NarutoFluxo Running Minecraft 1.7.10 (Forge v10.13.4.1614)",
+      "icon": null,
+      "version": "1.0.0",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.7.10",
+      "discord": {
+        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      },
+      "mainServer": false,
+      "autoconnect": false,
+      "modules": [
         {
-            "id": "NarutoFluxo",
-            "name": "Naruto Fluxo",
-            "description": "Servidor Naruto Fluxo",
-            "icon": "https://media.discordapp.net/attachments/1426294830459523233/1426296503986815087/icon.png",
-            "version": "1.0.0",
-            "address": "51.222.255.229:10005",
-            "minecraftVersion": "1.7.10",
-            "discord": {
-                "shortId": "NarutoFluxo",
-                "largeImageText": "Naruto Fluxo",
-                "largeImageKey": "server-prod"
+          "id": "net.minecraftforge:forge:1.7.10-10.13.4.1614-1.7.10:universal",
+          "name": "Minecraft Forge",
+          "type": "ForgeHosted",
+          "artifact": {
+            "size": 3018833,
+            "MD5": "add0fba161c4652a96efb4264ec2d9ec",
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
+          },
+          "subModules": [
+            {
+              "id": "net.minecraft:launchwrapper:1.12@jar",
+              "name": "Minecraft Forge (launchwrapper)",
+              "type": "Library",
+              "artifact": {
+                "size": 32999,
+                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
+              }
             },
-            "mainServer": true,
-            "autoconnect": true,
-            "modules": [
-                {
-                    "id": "net.minecraftforge:forge:1.7.10-10.13.4.1614",
-                    "name": "Minecraft Forge",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 3018833,
-                        "MD5": "add0fba161c4652a96efb4264ec2d9ec",
-                        "url": "https://maven.minecraftforge.net/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar"
-                    }
-                },
-                {
-                    "id": "narutofluxo:pack",
-                    "name": "Arquivos do Servidor",
-                    "type": "Library",
-                    "artifact": {
-                        "size": 107334156,
-                        "MD5": "e3b51eabd6f4ecf0b6a096ae490baf09",
-                        "url": "https://dl.dropboxusercontent.com/scl/fi/8jlfe7avri40cfu1k1v96/narutofluxo.zip?rlkey=pu0x76qh8twlwbzivquy76llu&dl=1"
-                    }
-                }
-            ]
+            {
+              "id": "org.ow2.asm:asm-all:5.0.3@jar",
+              "name": "Minecraft Forge (asm-all)",
+              "type": "Library",
+              "artifact": {
+                "size": 241639,
+                "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/ow2/asm/asm-all/5.0.3/asm-all-5.0.3.jar"
+              }
+            },
+            {
+              "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar",
+              "name": "Minecraft Forge (akka-actor_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 2514991,
+                "MD5": "541440ca0819ebada47d6d1a8b3ee9e1",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar"
+              }
+            },
+            {
+              "id": "com.typesafe:config:1.2.1@jar",
+              "name": "Minecraft Forge (config)",
+              "type": "Library",
+              "artifact": {
+                "size": 219554,
+                "MD5": "3aaf3c6e76a68e732c17d4a7e9877d81",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/com/typesafe/config/1.2.1/config-1.2.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar",
+              "name": "Minecraft Forge (scala-actors-migration_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 58018,
+                "MD5": "f5e79398daa1806f8b17311a3c782723",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-compiler:2.11.1@jar",
+              "name": "Minecraft Forge (scala-compiler)",
+              "type": "Library",
+              "artifact": {
+                "size": 13449765,
+                "MD5": "06030143bf86ca896fb6ccfd679b5760",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar",
+              "name": "Minecraft Forge (scala-continuations-library_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 25365,
+                "MD5": "004d7007abbcee858d3ca2c3ccbcbaab",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2/scala-continuations-library_2.11-1.0.2.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar",
+              "name": "Minecraft Forge (scala-continuations-plugin_2.11.1)",
+              "type": "Library",
+              "artifact": {
+                "size": 206575,
+                "MD5": "359c4a6743a082c689039482eed78670",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2/scala-continuations-plugin_2.11.1-1.0.2.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-library:2.11.1@jar",
+              "name": "Minecraft Forge (scala-library)",
+              "type": "Library",
+              "artifact": {
+                "size": 5538130,
+                "MD5": "1d88f665219e6006c5dd82d71c525c0f",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar",
+              "name": "Minecraft Forge (scala-parser-combinators_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 419701,
+                "MD5": "4e694499c965af4a02599c99d4f0b196",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-reflect:2.11.1@jar",
+              "name": "Minecraft Forge (scala-reflect)",
+              "type": "Library",
+              "artifact": {
+                "size": 4372892,
+                "MD5": "7878fac044e4e4b576bb35a77ccc34fc",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-swing_2.11:1.0.1@jar",
+              "name": "Minecraft Forge (scala-swing_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 726500,
+                "MD5": "1009d69e4948045383f2a7a334348af5",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar",
+              "name": "Minecraft Forge (scala-xml_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 648679,
+                "MD5": "c2d7e66495afe14545c31b21e99879ef",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"
+              }
+            },
+            {
+              "id": "lzma:lzma:0.0.1@jar",
+              "name": "Minecraft Forge (lzma)",
+              "type": "Library",
+              "artifact": {
+                "size": 5762,
+                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/lzma/lzma/0.0.1/lzma-0.0.1.jar"
+              }
+            },
+            {
+              "id": "net.sf.jopt-simple:jopt-simple:4.5@jar",
+              "name": "Minecraft Forge (jopt-simple)",
+              "type": "Library",
+              "artifact": {
+                "size": 61311,
+                "MD5": "1372bd4823bb1ef61e7db6724f601150",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:guava:17.0@jar",
+              "name": "Minecraft Forge (guava)",
+              "type": "Library",
+              "artifact": {
+                "size": 2243036,
+                "MD5": "89fef81c2adfa9b50a64ed5cd5d8c155",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/com/google/guava/guava/17.0/guava-17.0.jar"
+              }
+            },
+            {
+              "id": "org.apache.commons:commons-lang3:3.3.2@jar",
+              "name": "Minecraft Forge (commons-lang3)",
+              "type": "Library",
+              "artifact": {
+                "size": 412739,
+                "MD5": "3128bf75a2549ebe38663401191bacab",
+                "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/repo/lib/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "generated.forgemod:bspkrsCore:6.16@jar",
+          "name": "BspkrsCore",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 198525,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/1.7.10bspkrsCore-universal-6.16.jar",
+            "MD5": "e77344bda12bd0b91e01dfbb00a653f0"
+          }
+        },
+        {
+          "id": "generated.forgemod:animalsPlus:1.2@jar",
+          "name": "Animals+",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 764101,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/Animals-Plus-Mod-1.7.10_1.jar",
+            "MD5": "76b089bdfe63621b6a9bad5d362003c5"
+          }
+        },
+        {
+          "id": "generated.forgemod:Armourers-Workshop:1.7.10-0.48.5@jar",
+          "name": "Armourer's Workshop",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2089120,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/Armourers-Workshop-1.7.10-0.48.5.jar",
+            "MD5": "19885ea7a6b598516b4e7e467e32b2bb"
+          }
+        },
+        {
+          "id": "generated.forgemod:DamageIndicatorsMod:3.2.0@jar",
+          "name": "Damage Indicators",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 838539,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/Client.jar",
+            "MD5": "585658246c002b54334da46aefcb7007"
+          }
+        },
+        {
+          "id": "org.spongepowered.asm.launch:customnpcs:1.10.2@jar",
+          "name": "CustomNPC+",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 13921141,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/CustomNPC-Plus-1.10.2.jar",
+            "MD5": "98f402609d78ec772ad9660eb6fddec5"
+          }
+        },
+        {
+          "id": "generated.forgemod:narutocclanaddon:1.0.0@jar",
+          "name": "Naruto C Clan Addon",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1984382,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/DamageIndicator.jar",
+            "MD5": "e824949b070eb0e4fcf4f5eed3fac040"
+          }
+        },
+        {
+          "id": "org.spongepowered.asm.launch:etfuturum:2.5.1@jar",
+          "name": "Et Futurum Requiem",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 5103591,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/Et_Futurum_Requiem-2.5.1.jar",
+            "MD5": "8c7a26a435a69b679199e98c0edd81ac"
+          }
+        },
+        {
+          "id": "generated.forgemod:fluxedcore:1.0.9@jar",
+          "name": "Fluxed-Core",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 226673,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/Fluxed-Core-MC1710-1.0.9.jar",
+            "MD5": "840be8ca166c4c1133ddbbbfa7f33ef1"
+          }
+        },
+        {
+          "id": "generated.forgemod:fluxoclient:1.0@jar",
+          "name": "FluxoClient",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 253830,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/FluxoClient.jar",
+            "MD5": "0afb9fd7f79510e07b5d68db6e6f9478"
+          }
+        },
+        {
+          "id": "generated.forgemod:geckolib3:v3.0.0-master.25+9af9be15e0@jar",
+          "name": "GeckoLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4014142,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/geckolib-unofficial-1.7.10-1.0.4.jar",
+            "MD5": "50cbdf257456c00be2ef41a0d0eaefb1"
+          }
+        },
+        {
+          "id": "generated.forgemod:jbra:Client-v1.6.52@jar",
+          "name": "JBRA",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 129587,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/JBRA-Client-v1.6.52.jar",
+            "MD5": "3e12d9d4d5ee2aba58b0163337fd0a4c"
+          }
+        },
+        {
+          "id": "generated.forgemod:jfamilyc:v1.2.18@jar",
+          "name": "JFamilyC",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 146745,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/JFamilyC-v1.2.18.jar",
+            "MD5": "985d0cf68ef953b9f8120296281e7671"
+          }
+        },
+        {
+          "id": "generated.forgemod:jinryuu's:HDSkins-Mod-1.7.10-v1.3.1@jar",
+          "name": "JinRyuu's",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 23139,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/JinRyuu's-HDSkins-Mod-1.7.10-v1.3.1.jar",
+            "MD5": "e2cf6a79e3b8e6730fa5c144d531cd5e"
+          }
+        },
+        {
+          "id": "generated.forgemod:journeymap:1.7.10-5.1.4p6@jar",
+          "name": "JourneyMap",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1760156,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/journeymap-1.7.10-5.1.4p6-unlimited.jar",
+            "MD5": "69ebce4f122847bd142e2ffdd5380e6c"
+          }
+        },
+        {
+          "id": "generated.forgemod:jrmcore:v1.3.51@jar",
+          "name": "JRMCore",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 5008978,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/JRMCore-v1.3.51.jar",
+            "MD5": "7b3cfa6185b33c571eec961c7c2a8df3"
+          }
+        },
+        {
+          "id": "generated.forgemod:lxxxeno1:0.0.0@jar",
+          "name": "LxxXeno1",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4299716,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/LxxXeno1.jar",
+            "MD5": "baa672e00c0f8c34058f150fa2784e1b"
+          }
+        },
+        {
+          "id": "generated.forgemod:luxxynaruto:0.2@jar",
+          "name": "Luxxynaruto",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 295075,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/LxxXeno2.jar",
+            "MD5": "f12e5a4d5729355592a31a0574c65050"
+          }
+        },
+        {
+          "id": "generated.forgemod:maddonall:1@jar",
+          "name": "MAddonAll",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 27162,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/mAddonAll%20-%20Server.jar",
+            "MD5": "988f4e65fc033b1aca8c67c714d2e67d"
+          }
+        },
+        {
+          "id": "generated.forgemod:narutoc:v0.7.18@jar",
+          "name": "NarutoC",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1870476,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/NarutoC-v0.7.18.jar",
+            "MD5": "cb535c58b8076b1b66883a7346fd1172"
+          }
+        },
+        {
+          "id": "generated.forgemod:narutin:0.1@jar",
+          "name": "Naruto Fluxo",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 5074367,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/NarutoFluxo-ItemsModels-0.1v.jar",
+            "MD5": "43d946003d7c428dd77fc4c0b66ac019"
+          }
+        },
+        {
+          "id": "generated.forgemod:narutofluxo:0.0.0@jar",
+          "name": "NarutoFluxo",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1860472,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/NarutoFluxo.jar",
+            "MD5": "91cd22d11d4dd5eeb1a1a250d2c31ecd"
+          }
+        },
+        {
+          "id": "generated.forgemod:NarutoFluxoWaypoints:1.0@jar",
+          "name": "NarutoFluxoWaypoints",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 28861,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/NarutoFluxoW.jar",
+            "MD5": "a5a37f0bb64329024b6d9c61a849c60c"
+          }
+        },
+        {
+          "id": "generated.forgemod:CustomMainMenu:1.9.2@jar",
+          "name": "Custom Main Menu",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 115292,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/NFCustomMainMenu0.1.jar",
+            "MD5": "7d0a3079e02fc07cd19a9558227e878b"
+          }
+        },
+        {
+          "id": "generated.forgemod:custompause:0.1@jar",
+          "name": "Custom Pause",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 673360,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/NFCustomMenuPause-0.1v.jar",
+            "MD5": "afadbc4427073abb654ef7ffc15260ab"
+          }
+        },
+        {
+          "id": "org.spongepowered.asm.launch:npcaw:1.1@jar",
+          "name": "CustomNPC-Plus-AW-Addon",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 23772,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/npcaw-1.2.jar",
+            "MD5": "3b47b796898fe6f84d530437cf471ed7"
+          }
+        },
+        {
+          "id": "org.spongepowered.asm.launch:npcgecko:1.1@jar",
+          "name": "CustomNPC-Plus-Gecko-Addon",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 531333,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/npcgecko-1.2.jar",
+            "MD5": "e4dfd95481c3279a82c3b46a9a8d88e6"
+          }
+        },
+        {
+          "id": "lumien.resourceloader.asm:ResourceLoader:1.3@jar",
+          "name": "Resource Loader",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 13037,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/forgemods/required/ResourceLoader-MC1.7.10-1.3.jar",
+            "MD5": "8139e4169ad21a531110deb371c2e6f3"
+          }
+        },
+        {
+          "id": "client.cfg",
+          "name": "client.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 3488,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/armourersWorkshop/client.cfg",
+            "MD5": "e44cc018d9bb9b2eb6b3a0c9d4f3ed7a",
+            "path": "config/armourersWorkshop/client.cfg"
+          }
+        },
+        {
+          "id": "common.cfg",
+          "name": "common.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 3387,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/armourersWorkshop/common.cfg",
+            "MD5": "a6d3bb6d4680991e332099b0cf64e72c",
+            "path": "config/armourersWorkshop/common.cfg"
+          }
+        },
+        {
+          "id": "overrides.cfg",
+          "name": "overrides.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 18535,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/armourersWorkshop/overrides.cfg",
+            "MD5": "95f0099bd00efe35782f252098a5e825",
+            "path": "config/armourersWorkshop/overrides.cfg"
+          }
+        },
+        {
+          "id": "bspkrsCore.cfg",
+          "name": "bspkrsCore.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1388,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/bspkrsCore.cfg",
+            "MD5": "80447b3197189955ba2d918597ee9a7d",
+            "path": "config/bspkrsCore.cfg"
+          }
+        },
+        {
+          "id": "mainmenu.json",
+          "name": "mainmenu.json",
+          "type": "File",
+          "artifact": {
+            "size": 8558,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomMainMenu/mainmenu.json",
+            "MD5": "0c9cee34db0ae3a8a9a0d0651d7d650e",
+            "path": "config/CustomMainMenu/mainmenu.json"
+          }
+        },
+        {
+          "id": "client.cfg",
+          "name": "client.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 2463,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomNpcPlus/client.cfg",
+            "MD5": "5581939eff8c3e88527be53cce968988",
+            "path": "config/CustomNpcPlus/client.cfg"
+          }
+        },
+        {
+          "id": "debug.cfg",
+          "name": "debug.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1179,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomNpcPlus/debug.cfg",
+            "MD5": "b198a6417392ea43efad7523f5101398",
+            "path": "config/CustomNpcPlus/debug.cfg"
+          }
+        },
+        {
+          "id": "experimental.cfg",
+          "name": "experimental.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 152,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomNpcPlus/experimental.cfg",
+            "MD5": "914e1bccace25cead73a2ff72eec594b",
+            "path": "config/CustomNpcPlus/experimental.cfg"
+          }
+        },
+        {
+          "id": "item.cfg",
+          "name": "item.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 338,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomNpcPlus/item.cfg",
+            "MD5": "c56ac487f61a8d96910f3a89f95c4dd9",
+            "path": "config/CustomNpcPlus/item.cfg"
+          }
+        },
+        {
+          "id": "main.cfg",
+          "name": "main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 3338,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomNpcPlus/main.cfg",
+            "MD5": "c93ce04fa9b31e6600e3e3d39d136302",
+            "path": "config/CustomNpcPlus/main.cfg"
+          }
+        },
+        {
+          "id": "mixin.cfg",
+          "name": "mixin.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 669,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomNpcPlus/mixin.cfg",
+            "MD5": "245f54837ac348dc65c97012b24446e4",
+            "path": "config/CustomNpcPlus/mixin.cfg"
+          }
+        },
+        {
+          "id": "script.cfg",
+          "name": "script.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 3216,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/CustomNpcPlus/script.cfg",
+            "MD5": "444ba087f65e0d2e2a0c993c58124150",
+            "path": "config/CustomNpcPlus/script.cfg"
+          }
+        },
+        {
+          "id": "DamageIndicatorsMod.cfg",
+          "name": "DamageIndicatorsMod.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 7162,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/DamageIndicatorsMod.cfg",
+            "MD5": "944654b3d03c1c4b2001c085793645ed",
+            "path": "config/DamageIndicatorsMod.cfg"
+          }
+        },
+        {
+          "id": "DIAdvancedCompatibility.cfg",
+          "name": "DIAdvancedCompatibility.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 165825,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/DIAdvancedCompatibility.cfg",
+            "MD5": "2a34293e477e8129e2068cd9c8359572",
+            "path": "config/DIAdvancedCompatibility.cfg"
+          }
+        },
+        {
+          "id": "blocksitems.cfg",
+          "name": "blocksitems.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 19365,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/blocksitems.cfg",
+            "MD5": "33b7b55522c95fe6f5640a704b5c2b25",
+            "path": "config/etfuturum/blocksitems.cfg"
+          }
+        },
+        {
+          "id": "enchantspotions.cfg",
+          "name": "enchantspotions.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1523,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/enchantspotions.cfg",
+            "MD5": "4af0b97cb8b9fb063f45cb0c8d243ad0",
+            "path": "config/etfuturum/enchantspotions.cfg"
+          }
+        },
+        {
+          "id": "entities.cfg",
+          "name": "entities.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 2660,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/entities.cfg",
+            "MD5": "47147a635c8da66625689651e0c604de",
+            "path": "config/etfuturum/entities.cfg"
+          }
+        },
+        {
+          "id": "functions.cfg",
+          "name": "functions.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 15259,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/functions.cfg",
+            "MD5": "4e09f7ee3b1e0e7a784b7f271bad80b0",
+            "path": "config/etfuturum/functions.cfg"
+          }
+        },
+        {
+          "id": "mixins.cfg",
+          "name": "mixins.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 8294,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/mixins.cfg",
+            "MD5": "1572b9e086d8013f7732d3b3357f56a1",
+            "path": "config/etfuturum/mixins.cfg"
+          }
+        },
+        {
+          "id": "modcompat.cfg",
+          "name": "modcompat.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1001,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/modcompat.cfg",
+            "MD5": "7f368a59a838ea68455320ae638e6c86",
+            "path": "config/etfuturum/modcompat.cfg"
+          }
+        },
+        {
+          "id": "sounds.cfg",
+          "name": "sounds.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 6692,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/sounds.cfg",
+            "MD5": "e2049900a5960a32eca7e8f72bc88798",
+            "path": "config/etfuturum/sounds.cfg"
+          }
+        },
+        {
+          "id": "tweaks.cfg",
+          "name": "tweaks.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 2454,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/tweaks.cfg",
+            "MD5": "dd7ebd1238058869eca247ea095225fa",
+            "path": "config/etfuturum/tweaks.cfg"
+          }
+        },
+        {
+          "id": "world.cfg",
+          "name": "world.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 8474,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/etfuturum/world.cfg",
+            "MD5": "a2ae3a4c465c11a88a0a61b77f8f1c21",
+            "path": "config/etfuturum/world.cfg"
+          }
+        },
+        {
+          "id": "fluxedcore.cfg",
+          "name": "fluxedcore.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 440,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/fluxedcore.cfg",
+            "MD5": "b874ccc25acaac74d5ab2b709775fdb2",
+            "path": "config/fluxedcore.cfg"
+          }
+        },
+        {
+          "id": "forge.cfg",
+          "name": "forge.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 2365,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/forge.cfg",
+            "MD5": "81f9e79945ef085b97e073ac7d6ae9d0",
+            "path": "config/forge.cfg"
+          }
+        },
+        {
+          "id": "forgeChunkLoading.cfg",
+          "name": "forgeChunkLoading.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 2025,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/forgeChunkLoading.cfg",
+            "MD5": "3ca5c1db39ac108e8abeab74450a4f1d",
+            "path": "config/forgeChunkLoading.cfg"
+          }
+        },
+        {
+          "id": "geckolib3.cfg",
+          "name": "geckolib3.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 564,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/geckolib3.cfg",
+            "MD5": "2eb63f6c81637dcac71ee36ea9d49eee",
+            "path": "config/geckolib3.cfg"
+          }
+        },
+        {
+          "id": "Easy.cfg",
+          "name": "Easy.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1804,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/aai/Easy.cfg",
+            "MD5": "6b9593dc28aac08978edc065296609b9",
+            "path": "config/jingames/dbc/aai/Easy.cfg"
+          }
+        },
+        {
+          "id": "Hard.cfg",
+          "name": "Hard.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1802,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/aai/Hard.cfg",
+            "MD5": "0aa1bb49605479d9e92f920da1cbe015",
+            "path": "config/jingames/dbc/aai/Hard.cfg"
+          }
+        },
+        {
+          "id": "Insane.cfg",
+          "name": "Insane.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1802,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/aai/Insane.cfg",
+            "MD5": "f62ce658767071087e0410f2914d57fd",
+            "path": "config/jingames/dbc/aai/Insane.cfg"
+          }
+        },
+        {
+          "id": "Medium.cfg",
+          "name": "Medium.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1802,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/aai/Medium.cfg",
+            "MD5": "ee77bcab04df995d92b3479c808ccc7d",
+            "path": "config/jingames/dbc/aai/Medium.cfg"
+          }
+        },
+        {
+          "id": "form_mastery_main.cfg",
+          "name": "form_mastery_main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 806,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/forms/form_mastery_main.cfg",
+            "MD5": "5c628b60736d5f6e853449d0c4001004",
+            "path": "config/jingames/dbc/forms/form_mastery_main.cfg"
+          }
+        },
+        {
+          "id": "god_of_destruction.cfg",
+          "name": "god_of_destruction.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 3649,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/forms/god_of_destruction.cfg",
+            "MD5": "e8002123a4b5339b641b5121bbe95242",
+            "path": "config/jingames/dbc/forms/god_of_destruction.cfg"
+          }
+        },
+        {
+          "id": "ultra_instinct.cfg",
+          "name": "ultra_instinct.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 9999,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/forms/ultra_instinct.cfg",
+            "MD5": "40e43bc1ce9adf53ebb558e6b113e92e",
+            "path": "config/jingames/dbc/forms/ultra_instinct.cfg"
+          }
+        },
+        {
+          "id": "form_mastery.cfg",
+          "name": "form_mastery.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 13430,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/arcosian/form_mastery.cfg",
+            "MD5": "648e70e71254eff9f5fab8f6de336947",
+            "path": "config/jingames/dbc/races/arcosian/form_mastery.cfg"
+          }
+        },
+        {
+          "id": "main.cfg",
+          "name": "main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 4117,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/arcosian/main.cfg",
+            "MD5": "31357fd46514363593b7cc6278c6d592",
+            "path": "config/jingames/dbc/races/arcosian/main.cfg"
+          }
+        },
+        {
+          "id": "form_mastery.cfg",
+          "name": "form_mastery.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 18006,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/half-saiyan/form_mastery.cfg",
+            "MD5": "36d8227c77045a495fe3323e996eaf2b",
+            "path": "config/jingames/dbc/races/half-saiyan/form_mastery.cfg"
+          }
+        },
+        {
+          "id": "main.cfg",
+          "name": "main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 4187,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/half-saiyan/main.cfg",
+            "MD5": "94cc93f15a2579ef9bae488b6f898afa",
+            "path": "config/jingames/dbc/races/half-saiyan/main.cfg"
+          }
+        },
+        {
+          "id": "form_mastery.cfg",
+          "name": "form_mastery.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 8304,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/human/form_mastery.cfg",
+            "MD5": "0145554d33c8ebe7f37159eb5a82e2f2",
+            "path": "config/jingames/dbc/races/human/form_mastery.cfg"
+          }
+        },
+        {
+          "id": "main.cfg",
+          "name": "main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 4049,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/human/main.cfg",
+            "MD5": "016cb92f0d6fc9f7e85aa74f85cb0d71",
+            "path": "config/jingames/dbc/races/human/main.cfg"
+          }
+        },
+        {
+          "id": "form_mastery.cfg",
+          "name": "form_mastery.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 9247,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/majin/form_mastery.cfg",
+            "MD5": "2850ee5bfd218a723d5cdc2194528374",
+            "path": "config/jingames/dbc/races/majin/form_mastery.cfg"
+          }
+        },
+        {
+          "id": "main.cfg",
+          "name": "main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 10403,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/majin/main.cfg",
+            "MD5": "4d4f53e96fe0431b8760d65d6040d678",
+            "path": "config/jingames/dbc/races/majin/main.cfg"
+          }
+        },
+        {
+          "id": "form_mastery.cfg",
+          "name": "form_mastery.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 8303,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/namekian/form_mastery.cfg",
+            "MD5": "892ebf4e5871993fbc321e20ea404334",
+            "path": "config/jingames/dbc/races/namekian/form_mastery.cfg"
+          }
+        },
+        {
+          "id": "main.cfg",
+          "name": "main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 4114,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/namekian/main.cfg",
+            "MD5": "52188710112280bd4f86e177cbdfbc87",
+            "path": "config/jingames/dbc/races/namekian/main.cfg"
+          }
+        },
+        {
+          "id": "form_mastery.cfg",
+          "name": "form_mastery.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 18006,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/saiyan/form_mastery.cfg",
+            "MD5": "36d8227c77045a495fe3323e996eaf2b",
+            "path": "config/jingames/dbc/races/saiyan/form_mastery.cfg"
+          }
+        },
+        {
+          "id": "main.cfg",
+          "name": "main.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 4069,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/races/saiyan/main.cfg",
+            "MD5": "9ef81e5858941ba0fdef51afba4ef81a",
+            "path": "config/jingames/dbc/races/saiyan/main.cfg"
+          }
+        },
+        {
+          "id": "instant_transmission.cfg",
+          "name": "instant_transmission.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 6212,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/skills/instant_transmission.cfg",
+            "MD5": "caca4c0da6c0e1702d0d04dd0439e498",
+            "path": "config/jingames/dbc/skills/instant_transmission.cfg"
+          }
+        },
+        {
+          "id": "skill_costs.cfg",
+          "name": "skill_costs.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 7635,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/dbc/skill_costs.cfg",
+            "MD5": "bc4cf7d300bf3359b3964da7110fb4ba",
+            "path": "config/jingames/dbc/skill_costs.cfg"
+          }
+        },
+        {
+          "id": "client_notifications.cfg",
+          "name": "client_notifications.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 600,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/jrmc/client_notifications.cfg",
+            "MD5": "437216c17d25139379b8d435e32e0813",
+            "path": "config/jingames/jrmc/client_notifications.cfg"
+          }
+        },
+        {
+          "id": "client_settings.cfg",
+          "name": "client_settings.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 9739,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/jrmc/client_settings.cfg",
+            "MD5": "d3d854416edc3a06971d056742b860b8",
+            "path": "config/jingames/jrmc/client_settings.cfg"
+          }
+        },
+        {
+          "id": "airboxing.cfg",
+          "name": "airboxing.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 2493,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/jrmc/minigames/airboxing.cfg",
+            "MD5": "ae86a07a32ee90cdf61f720d7436ecc4",
+            "path": "config/jingames/jrmc/minigames/airboxing.cfg"
+          }
+        },
+        {
+          "id": "concentration.cfg",
+          "name": "concentration.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 1053,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/jrmc/minigames/concentration.cfg",
+            "MD5": "db039740b2f6fcb833187a750a2c9649",
+            "path": "config/jingames/jrmc/minigames/concentration.cfg"
+          }
+        },
+        {
+          "id": "skill_costs.cfg",
+          "name": "skill_costs.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 950,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/jrmc/skill_costs.cfg",
+            "MD5": "6321eabc46b2b1e1328b531aa70ed815",
+            "path": "config/jingames/jrmc/skill_costs.cfg"
+          }
+        },
+        {
+          "id": "skill_costs.cfg",
+          "name": "skill_costs.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 4903,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jingames/nc/skill_costs.cfg",
+            "MD5": "b490518d8ecc02c8bbbd576d19ab574b",
+            "path": "config/jingames/nc/skill_costs.cfg"
+          }
+        },
+        {
+          "id": "jinryuufamilyc.cfg",
+          "name": "jinryuufamilyc.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 839,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jinryuufamilyc.cfg",
+            "MD5": "2821e5a2bf9874dab20cf434385492b9",
+            "path": "config/jinryuufamilyc.cfg"
+          }
+        },
+        {
+          "id": "jinryuuhdskinsextended_Config.cfg",
+          "name": "jinryuuhdskinsextended_Config.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 821,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jinryuuhdskinsextended_Config.cfg",
+            "MD5": "a8e128f4c324ca259b96a0b7ef49d205",
+            "path": "config/jinryuuhdskinsextended_Config.cfg"
+          }
+        },
+        {
+          "id": "jinryuujrmcore.cfg",
+          "name": "jinryuujrmcore.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 46959,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jinryuujrmcore.cfg",
+            "MD5": "183be6f5b1ec2be5933157a7f45cff85",
+            "path": "config/jinryuujrmcore.cfg"
+          }
+        },
+        {
+          "id": "jinryuunarutoc.cfg",
+          "name": "jinryuunarutoc.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 24,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/jinryuunarutoc.cfg",
+            "MD5": "612752ff7e88a813800c1837bf50a31e",
+            "path": "config/jinryuunarutoc.cfg"
+          }
+        },
+        {
+          "id": "journeymap_ModInfo.cfg",
+          "name": "journeymap_ModInfo.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 371,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/journeymap_ModInfo.cfg",
+            "MD5": "1c086318cb1c2e9604297a95a36eaae5",
+            "path": "config/journeymap_ModInfo.cfg"
+          }
+        },
+        {
+          "id": "LunatriusCore.cfg",
+          "name": "LunatriusCore.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 464,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/LunatriusCore.cfg",
+            "MD5": "9e93cfbf55162012de414184a80d4104",
+            "path": "config/LunatriusCore.cfg"
+          }
+        },
+        {
+          "id": "luxxynarutox.cfg",
+          "name": "luxxynarutox.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 0,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/luxxynarutox.cfg",
+            "MD5": "d41d8cd98f00b204e9800998ecf8427e",
+            "path": "config/luxxynarutox.cfg"
+          }
+        },
+        {
+          "id": "transformer_exclusion_list.txt",
+          "name": "transformer_exclusion_list.txt",
+          "type": "File",
+          "artifact": {
+            "size": 236,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/mixingasm/transformer_exclusion_list.txt",
+            "MD5": "e76b174ac476e6c82a66a8ec27353afb",
+            "path": "config/mixingasm/transformer_exclusion_list.txt"
+          }
+        },
+        {
+          "id": "transformer_inclusion_list.txt",
+          "name": "transformer_inclusion_list.txt",
+          "type": "File",
+          "artifact": {
+            "size": 253,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/mixingasm/transformer_inclusion_list.txt",
+            "MD5": "ae7b8fb4456a9646a9d9780179e525ad",
+            "path": "config/mixingasm/transformer_inclusion_list.txt"
+          }
+        },
+        {
+          "id": "transformer_inclusion_list_default.txt",
+          "name": "transformer_inclusion_list_default.txt",
+          "type": "File",
+          "artifact": {
+            "size": 1260,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/mixingasm/transformer_inclusion_list_default.txt",
+            "MD5": "8cda3d3c3f02cb43ab09813b31de79c0",
+            "path": "config/mixingasm/transformer_inclusion_list_default.txt"
+          }
+        },
+        {
+          "id": "Schematica.cfg",
+          "name": "Schematica.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 2598,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/Schematica.cfg",
+            "MD5": "15599390a050145f22038c0f7a082539",
+            "path": "config/Schematica.cfg"
+          }
+        },
+        {
+          "id": "sloppydeploader.cfg",
+          "name": "sloppydeploader.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 291,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/sloppydeploader.cfg",
+            "MD5": "ce57770ebf64487af66baaf0cf9c0eb9",
+            "path": "config/sloppydeploader.cfg"
+          }
+        },
+        {
+          "id": "splash.properties",
+          "name": "splash.properties",
+          "type": "File",
+          "artifact": {
+            "size": 339,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/splash.properties",
+            "MD5": "ab78b7b4ee1700a2d79b79d4f26fec6c",
+            "path": "config/splash.properties"
+          }
+        },
+        {
+          "id": "unimixins.properties",
+          "name": "unimixins.properties",
+          "type": "File",
+          "artifact": {
+            "size": 764,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/unimixins.properties",
+            "MD5": "a07e3f6f365cb71584bb0789069219ca",
+            "path": "config/unimixins.properties"
+          }
+        },
+        {
+          "id": "UniqueNames.txt",
+          "name": "UniqueNames.txt",
+          "type": "File",
+          "artifact": {
+            "size": 94393,
+            "url": "https://raw.githubusercontent.com/SilvazxRT/fluxolaunchermodsoriginal2/main/servers/NarutoFluxo-1.7.10/files/config/UniqueNames.txt",
+            "MD5": "b8884811b86c0938a41ca716e155e7de",
+            "path": "config/UniqueNames.txt"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
