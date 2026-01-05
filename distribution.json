@@ -13,7 +13,7 @@
         {
             "id": "NarutoFluxo",
             "name": "Naruto Fluxo",
-            "description": "Servidor Naruto Fluxo - Versão Helios",
+            "description": "Servidor Naruto Fluxo",
             "icon": "https://media.discordapp.net/attachments/1426294830459523233/1426296503986815087/icon.png",
             "version": "1.0.0",
             "address": "51.222.255.229:10005",
@@ -37,9 +37,9 @@
                     }
                 },
                 {
-                    "id": "narutofluxo:pack:1.0.0",
-                    "name": "Arquivos do Servidor (Mods/Configs )",
-                    "type": "File",
+                    "id": "narutofluxo:pack",
+                    "name": "Arquivos do Servidor",
+                    "type": "Library",
                     "artifact": {
                         "size": 107334156,
                         "MD5": "e3b51eabd6f4ecf0b6a096ae490baf09",
@@ -50,4 +50,3 @@
         }
     ]
 }
-
